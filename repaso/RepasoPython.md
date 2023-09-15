@@ -41,3 +41,17 @@
 # alumno={"nombre":"jory","edad:":"18","sexo":"todos los dias"}
 # - combinar ambas estructuras de datos
 # alumno={"nombre":"jory","edad":30,"amigos":["anthony","edwin","china"],"direcion":{"departamento":"ayacucho","provincia":"lucanas","distrito":"puquio"}}
+
+##                  CONTROLES DE FLUJO
+# - decisiones:solo se ejecutara el codigo si la condicion es verdadera, podemos hacer que si la condicion sea falsa se ejecute otro codigo.
+# primero espesificar el codigo que se ejecutara si cumple una condicion
+# if <condicion>:
+#     el codigo que deseamos ejecutar si la condicion es verdad
+#     print("ejecuta esto")
+# aqui estamos fuera del if o del si este codigo siempre se ejecutara no depende del if
+# print("esto siempre se ejecutara")
+si queremos que se ejecute un codigo en caso sea falso
+# if <condicion falsa>:
+#     print ("solo imprime si es verdad")
+# else:
+#     print("solo imprime si es falso")
