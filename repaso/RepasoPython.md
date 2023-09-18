@@ -56,7 +56,7 @@ if "condicion falsa":
 else:
     print("solo imprime si es falso")
 - ciclos: existen 2 tipos
-1. cuando sabes la cantidad de veces qye vamos a repetir.
+1. for.- cuando sabes la cantidad de veces qye vamos a repetir.
 para este caso existe el "for"
 sintaxis despues de la palabra reservada "for" 
 deberemos crear una variable que almacene el 
@@ -70,3 +70,31 @@ ejemplo:
 *   print(i)
 
 cuando no sabemos la cantidad de veces a repetir
+
+2. while.- El bucle while es otra estructura de control de flujo, concretamente lo que hace es repetir un código mientras dure una determinada condición. Se puede decir que el bucle while se utiliza para hacer algo repetidamente, bajo unas condiciones específicas, sin saber cuantas veces se repetirá.
+
+condicion=true
+
+while condicion
+
+    print("hola")
+
+    texto=input("ingresa tu nombre o salir para teminar el programa: ")
+
+    if texto=="salir
+
+    condicion=False
+
+# funciones
+existen 2 tipos de funciones
+
+1. propias del lenguaje que ya vienen creadas o insertaddas en el lenguaje de python y estan listas para ser usadas.
+
+estructura de uso de una funcion(tiene el nombre seguido de parentecis) dentro del parentecis podremos pasarle datos que necesita la funcion para ejecutarce
+
+- print("datos") esta es una funcion que nos sirve para mostrar en consola datos.
+
+- len("dato") esta funcion nos permite saber la longitud de una lista o un string
+- input("dato") esta funcion se detiene a esperar que el usuario introdusca informacion.
+entre parentecis podremos escribir un mensaje que indique que accion realizara el usuario.
+

@@ -42,15 +42,16 @@
 
 
 ## 4. crear un programa que pida un numero y lo evalue con el numero premiado si el numero ingresado es el premiado el programa finalizara si el numero ingresado es incorrecto el programa seguira pidiendo el numero premiado.
-numero_premiado = 9
-while True:  
-    numero_ingresado = int(input("Ingresa un número: "))
-    if numero_ingresado == numero_premiado:
-        print(f"""
+# numero_premiado = 9
+# while True:  
+#     numero_ingresado = int(input("Ingresa un número: "))
+#     if numero_ingresado == numero_premiado:
+#         print(f"""
         
-  ¡Felicidades! Has adivinado el número premiado.
+#                       ¡Felicidades! 
+#               Has adivinado el número premiado.
               
-""")
-        break  
-    else:
-        print("Número incorrecto. Inténtalo de nuevo.")
+# """)
+#         break  
+#     else:
+#         print("Número incorrecto. Inténtalo de nuevo.")
