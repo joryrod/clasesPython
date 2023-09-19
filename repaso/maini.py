@@ -3,5 +3,5 @@
 ## 2. variables
 ## 3. operadores
 ## 4. datos estructurados
-## 5. funciones
-## 6. controles de flujo
+## 5. controles de flujo
+## 6. Funciones

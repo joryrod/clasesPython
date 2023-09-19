@@ -1,4 +1,3 @@
-
 ## 1. crear un programa que me pida la edad de una persona si la edad es mayor o igual a 18 que me muestre un mensaje "eres mayo de edad" caso contrario que me muestre un mensaje "eres menor de edad"
 # edad=int(input("ingrese su edad: "))
 # if edad>=18:
