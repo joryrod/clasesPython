@@ -92,9 +92,55 @@ existen 2 tipos de funciones
 
 estructura de uso de una funcion(tiene el nombre seguido de parentecis) dentro del parentecis podremos pasarle datos que necesita la funcion para ejecutarce
 
-- print("datos") esta es una funcion que nos sirve para mostrar en consola datos.
+- **print("datos")** esta es una funcion que nos sirve para mostrar en consola datos.
 
-- len("dato") esta funcion nos permite saber la longitud de una lista o un string
-- input("dato") esta funcion se detiene a esperar que el usuario introdusca informacion.
+- **len("dato")** esta funcion nos permite saber la longitud de una lista o un string
+- **input("dato")** esta funcion se detiene a esperar que el usuario introdusca informacion.
 entre parentecis podremos escribir un mensaje que indique que accion realizara el usuario.
 
+- **max([una lista])** nos muestra el numero mayor de una lista.
+
+- **min([lista])** nos muestra el numero menor de una lista.
+
+- **type("numero")** funcion para convertir de un string a un numero entero.
+
+- **str("string")** funcion para convertir de un numero entero a un string.
+
+- **lista.append(elemento)** append es una funcion que nos permite agregar elementos al final de una lista.
+
+- **lista.pop()** pop es una funcion de python que nos permite eliminar los elementos que se encuentran al final de la lista.
+
+- **dato.insert("possicion", "dato a agregar")** insert es una funcion de python que nos permite agregar elementos en cualquier posicion de mi lista para eso se le tiene que pasar dos parametros, primero indicarle el indice y segundo el dato que se va agregar.
+
+- **lista.remove(elemento a aliminar)** remove es un a funcion de python que nos permite eliminar elementos de cualquier posicion de una lista, esta funcion resibe solo el elemento que deseamos eliminar.
+
+- **lista=cadena.split("separador de datos")** split es una funcion que nos permite dividir en una cadena.
+
+2. **funciones propias o funciones creadas**.- 
+
+una funcion son mini programas tambien se les conoce como modulos o fragmentos de codigo  de uso exclusivo.
+
+pasos:
+
+- hacer uso de pa palabra reservada "def" 
+- definir un nombre de funcion que describa la tarea que va a realizar.
+- establecer los parametros que resivira la funcion entre parentesis().
+establecer que valor o dato va retornar mi funcion con la palabra reservada return
+> **observacion**: tambien podemos hacer uso de la funcion print() para retornar un mensaje en nuestra funcion.
+
+    def saludo():
+    print("hola este es un saludo")
+> como hacemos uso de la funcion?? nombre de la funcion y parentesis
+    
+    saludo()
+
+> ejemplo:
+
+    def suma(a,b):
+        total=a+b
+        return total
+    mi_print(suma(45,12))
+
+te imprimira en consola el resultado que es 57.
+
+    
