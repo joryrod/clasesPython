@@ -143,4 +143,3 @@ establecer que valor o dato va retornar mi funcion con la palabra reservada retu
 
 te imprimira en consola el resultado que es 57.
 
-    

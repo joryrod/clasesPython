@@ -56,35 +56,59 @@
 #         print("Número incorrecto. Inténtalo de nuevo.")
 
 
-# crear una funcion por cada operador aritmetico que reciba 2 parametros y retorne el resultadode la operacion creando una funcion qeu imprima en consola el resultado
-def suma(a,b):
-    resultado=a+b
-    return resultado
+## 5. crear una funcion por cada operador aritmetico que reciba 2 parametros y retorne el resultadode la operacion creando una funcion qeu imprima en consola el resultado
+# def suma(a,b):
+#     resultado=a+b
+#     return resultado
 
-def resta(a,b):
-    resultado=a-b
-    return resultado
+# def resta(a,b):
+#     resultado=a-b
+#     return resultado
 
-def multiplicacion(a,b):
-    resultado=a*b
-    return resultado
+# def multiplicacion(a,b):
+#     resultado=a*b
+#     return resultado
 
-def division(a,b):
-    resultado=a/b
-    return resultado
-num1=float(input("ingrese un numero: "))
-num2=float(input("ingrese otro numero numero: "))
-operacion=input("que tipo de operacion desea realizar: ")
-if operacion== "sumar":
-    resultado=suma(num1,num2)
-elif operacion=="restar":
-    resultado=resta(num1,num2)
-elif operacion=="multiplicar":
-    resultado=multiplicacion(num1,num2)
-elif operacion=="dividir":
-    resultado=division(num1,num2)
-else:
-    print("operacion no valida")
-    resultado=None
-if resultado is not None:
-    print("El resultado es: ",resultado)
+# def division(a,b):
+#     resultado=a/b
+#     return resultado
+# num1=float(input("ingrese un numero: "))
+# num2=float(input("ingrese otro numero numero: "))
+# operacion=input("que tipo de operacion desea realizar: ")
+# if operacion== "sumar":
+#     resultado=suma(num1,num2)
+# elif operacion=="restar":
+#     resultado=resta(num1,num2)
+# elif operacion=="multiplicar":
+#     resultado=multiplicacion(num1,num2)
+# elif operacion=="dividir":
+#     resultado=division(num1,num2)
+# else:
+#     print("operacion no valida")
+#     resultado=None
+# if resultado is not None:
+#     print("El resultado es: ",resultado)
+
+## 6. escribe una funcion que reciba un numero entero positivo y devuelva su factorial que si el resultado sea negativo muestre un error
+# def factorial(numero):
+#     if numero < 0:
+#         print("Error: El factorial no está definido para números negativos.")
+#         return None
+#     else:
+#         resultado = 1
+#         for i in range(1, numero + 1):
+#             resultado *= i
+#         return resultado
+# num1 = int(input("Ingrese un número entero positivo: "))
+# if num1 >= 0:
+#     resultado_factorial = factorial(num1)
+    
+#     if resultado_factorial is not None:
+#         print("El factorial de", num1, "es", resultado_factorial)
+# else:
+#     print("Error: Ingrese un número entero positivo.")
+
+## 7.escribir una funcion que reciva como parametros una lista de numeros y retorne una nueva lista con cada numero elevado al cuadrado
+
+
+## 8. escribir un programa que reciba una cadena de caracteres y devuelva un objeto con cada palabra que contiene y su frecuencia.
