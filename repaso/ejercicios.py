@@ -54,3 +54,37 @@
 #         break  
 #     else:
 #         print("Número incorrecto. Inténtalo de nuevo.")
+
+
+# crear una funcion por cada operador aritmetico que reciba 2 parametros y retorne el resultadode la operacion creando una funcion qeu imprima en consola el resultado
+def suma(a,b):
+    resultado=a+b
+    return resultado
+
+def resta(a,b):
+    resultado=a-b
+    return resultado
+
+def multiplicacion(a,b):
+    resultado=a*b
+    return resultado
+
+def division(a,b):
+    resultado=a/b
+    return resultado
+num1=float(input("ingrese un numero: "))
+num2=float(input("ingrese otro numero numero: "))
+operacion=input("que tipo de operacion desea realizar: ")
+if operacion== "sumar":
+    resultado=suma(num1,num2)
+elif operacion=="restar":
+    resultado=resta(num1,num2)
+elif operacion=="multiplicar":
+    resultado=multiplicacion(num1,num2)
+elif operacion=="dividir":
+    resultado=division(num1,num2)
+else:
+    print("operacion no valida")
+    resultado=None
+if resultado is not None:
+    print("El resultado es: ",resultado)
