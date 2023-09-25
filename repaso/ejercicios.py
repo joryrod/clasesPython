@@ -119,16 +119,12 @@ print(numeros_al_cuadrado)
 def contar_frecuencia_palabras(cadena):
     frecuencia_palabras = {}
     palabras = cadena.split()
-
     for palabra in palabras:
         if palabra in frecuencia_palabras:
             frecuencia_palabras[palabra] += 1
         else:
             frecuencia_palabras[palabra] = 1
-
     return frecuencia_palabras
-
-# Ejemplo de uso:
 cadena = "Hola mundo, hola de nuevo"
 resultado = contar_frecuencia_palabras(cadena)
 print(resultado)
