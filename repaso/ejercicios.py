@@ -108,7 +108,36 @@
 # else:
 #     print("Error: Ingrese un número entero positivo.")
 
-## 7.escribir una funcion que reciva como parametros una lista de numeros y retorne una nueva lista con cada numero elevado al cuadrado
-
+## 7.escribir una funcion que reciba como parametros una lista de numeros y retorne una nueva lista con cada numero elevado al cuadrado.
+# def elevar_al_cuadrado(lista_numeros):
+#     return[numero **2 for numero in lista_numeros]
+# numeros = [1,2,3,4,5,6,7,8,9,10]
+# numeros_al_cuadrado = elevar_al_cuadrado(numeros)
+# print(numeros_al_cuadrado)
 
 ## 8. escribir un programa que reciba una cadena de caracteres y devuelva un objeto con cada palabra que contiene y su frecuencia.
+from collections import Counter
+import string
+
+def contar_palabras(cadena):
+    """
+    Esta función cuenta la frecuencia de cada palabra en una cadena de caracteres.
+
+    Parameters:
+    cadena (str): Cadena de caracteres.
+
+    Returns:
+    dict: Diccionario con cada palabra y su frecuencia.
+    """
+    # Eliminamos signos de puntuación y convertimos a minúsculas
+    cadena_limpia = cadena.translate(str.maketrans("", "", string.punctuation)).lower()
+
+    # Dividimos la cadena en palabras y contamos la frecuencia de cada una
+    return Counter(cadena_limpia.split())
+
+# Ejemplo de uso
+cadena = "Esta es una cadena de ejemplo. Es un ejemplo simple de cómo contar palabras en una cadena."
+frecuencia_palabras = contar_palabras(cadena)
+print("Frecuencia de palabras:")
+print(frecuencia_palabras)
+
