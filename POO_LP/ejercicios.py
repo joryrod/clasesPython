@@ -106,12 +106,36 @@
 
 
 ## 6. haciendo uso de la poo crear un obgeto para una impresora
-class epson:
-    def __init__(self,marca,modelo,serie):
-        self.marca="Eppson"
-        self.modelo="multifuncional"
-        self.serie="L3110"
+# class epson:
+#     def __init__(self,marca,modelo,serie):
+#         self.marca="Eppson"
+#         self.modelo="multifuncional"
+#         self.serie="L3110"
 
+#     def imprimir(self):
+#         print(f"La impresora {self.marca} {self.serie} esta imprimiendo")
+#     def copiar(self):
+#         print(f"La impresora {self.marca} {self.serie} esta fotocopiando")
+#     def escanear(self):
+#         print(f"La impresora {self.marca} {self.serie} esta Escaneando")
+# impresora=epson("Eppson","multifuncional","L3110")
+
+# print(f"marca: {impresora.marca}")
+# print(f"procesador: {impresora.modelo}")
+# print(f"teclado: {impresora.serie}")
+# impresora.imprimir()
+# impresora.copiar()
+# impresora.escanear()
+
+
+
+## 7. haciendo uso de la poo crear un obgeto para emitir una factura
+class epson:
+    def __init__(self,monto,cantidad,precio_unitario,total):
+        self.monto=input("ingrese el monto comprado: ")
+        self.cantidad=input("ingrese la cantidada comprar: ")
+        self.precio_unitario=input("ingrese el precio unitario: ")
+        self.total=total_a_pagar
     def imprimir(self):
         print(f"La impresora {self.marca} {self.serie} esta imprimiendo")
     def copiar(self):
@@ -126,7 +150,3 @@ print(f"teclado: {impresora.serie}")
 impresora.imprimir()
 impresora.copiar()
 impresora.escanear()
-
-
-
-## 7. haciendo uso de la poo crear un obgeto para emitir una factura
