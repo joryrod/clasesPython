@@ -129,24 +129,114 @@
 
 
 
-## 7. haciendo uso de la poo crear un obgeto para emitir una factura
-class epson:
-    def __init__(self,monto,cantidad,precio_unitario,total):
-        self.monto=input("ingrese el monto comprado: ")
-        self.cantidad=input("ingrese la cantidada comprar: ")
-        self.precio_unitario=input("ingrese el precio unitario: ")
-        self.total=total_a_pagar
-    def imprimir(self):
-        print(f"La impresora {self.marca} {self.serie} esta imprimiendo")
-    def copiar(self):
-        print(f"La impresora {self.marca} {self.serie} esta fotocopiando")
-    def escanear(self):
-        print(f"La impresora {self.marca} {self.serie} esta Escaneando")
-impresora=epson("Eppson","multifuncional","L3110")
+## 7. Haciendo uso de la POO crear un objeto para emitir una factura.
+# class Factura:
+#     def __init__(self, numero, fecha, cliente, total):
+#         self.numero = numero
+#         self.fecha = fecha
+#         self.cliente = cliente
+#         self.total = total
 
-print(f"marca: {impresora.marca}")
-print(f"procesador: {impresora.modelo}")
-print(f"teclado: {impresora.serie}")
-impresora.imprimir()
-impresora.copiar()
-impresora.escanear()
+#     def mostrar_informacion(self):
+#         print("Número de factura:", self.numero)
+#         print("Fecha:", self.fecha)
+#         print("Cliente:", self.cliente)
+#         print("Total:", self.total)
+
+
+# # Crear un objeto para una factura
+# mi_factura = Factura("F0001", "01/05/2022", "Cliente A", 150.50)
+
+# # Mostrar la información de la factura
+# mi_factura.mostrar_informacion()
+
+
+## 8.crear un objeto laptop con dos atributos de clase y 5 atributos de instancia devera tener hasta 3 funcionalidades como minimo.
+
+# class Laptop:
+#     marca = "Desconocida"
+#     sistema_operativo = "Desconocido"
+#     def __init__(self, modelo, pantalla, procesador, memoria, almacenamiento):
+#         self.modelo = modelo
+#         self.pantalla = pantalla
+#         self.procesador = procesador
+#         self.memoria = memoria
+#         self.almacenamiento = almacenamiento
+#     def encender(self):
+#         return f"{self.modelo} está encendida."
+#     def apagar(self):
+#         return f"{self.modelo} está apagada."
+#     def mostrar_informacion(self):
+#         return f"Modelo:{self.modelo},Pantalla:{self.pantalla},Procesador:{self.procesador},Memoria:{self.memoria},Almacenamiento:{self.almacenamiento}"
+# miLaptop=Laptop("lenovo","15.6 pulgadas","Intel Core i7","16 GB RAM","512 GB SSD")
+# print(miLaptop.encender())
+# print(miLaptop.apagar())
+# print(miLaptop.mostrar_informacion())
+
+
+
+## 9. crear una clase puesto de mercado que tenga un atributo de clase, 5 atributos de instancia y 5 funcionalidades.
+# debera crear 4 instancias de la clase mercado ejm puesto mechita, puesto la gringa, puesto ojo de uva.
+
+
+class puesto:
+    nombre_puesto= "Desconocida"
+    def __init__(self,verduras,frutas,abarrotes,limpieza,concerbas):
+        self.verduras =verduras
+        self.frutas=frutas
+        self.abarrotes=abarrotes
+        self.limpieza=limpieza
+        self.concerbas=concerbas
+    def llamado_cliente(self):
+        return f""" 
+compre cacero... :v
+"""
+    def venta(self):
+        return f"""
+...
+{self.verduras}
+{self.abarrotes}
+{self.frutas}
+{self.limpieza}
+{self.concerbas}
+...
+"""
+    def atencion(self):
+        return f"""
+compre chamo XD
+"""
+    def delybery(self):
+        return f"""
+delybery 156794357
+"""
+    def compra(self):
+        return f"""
+Esperando a los provedores
+"""
+puestoLaChina=puesto("verduras","frutas","abarrotes","limpieza","concerbas")
+print(puestoLaChina.llamado_cliente())
+print(puestoLaChina.venta())
+print(puestoLaChina.atencion())
+print(puestoLaChina.delybery())
+print(puestoLaChina.compra())
+
+puestoJoselito=puesto("verduras","frutas","abarrotes","limpieza","concerbas")
+print(puestoJoselito.llamado_cliente())
+print(puestoJoselito.venta())
+print(puestoJoselito.atencion())
+print(puestoJoselito.delybery())
+print(puestoJoselito.compra())
+
+puestoGringasho=puesto("verduras","frutas","abarrotes","limpieza","concerbas")
+print(puestoGringasho.llamado_cliente())
+print(puestoGringasho.venta())
+print(puestoGringasho.atencion())
+print(puestoGringasho.delybery())
+print(puestoGringasho.compra())
+
+puestoMechita=puesto("verduras","frutas","abarrotes","limpieza","concerbas")
+print(puestoMechita.llamado_cliente())
+print(puestoMechita.venta())
+print(puestoMechita.atencion())
+print(puestoMechita.delybery())
+print(puestoMechita.compra())
