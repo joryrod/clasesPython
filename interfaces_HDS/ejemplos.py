@@ -6,12 +6,12 @@ import os
 #CREACIÓN DE LA VENTANA:
 canvas = tk.Tk()
 canvas.geometry("550x660")
-canvas.title("NOTA♥☺")
+canvas.title("VENTANA")
 canvas.config(bg = "pink")
 ventana= tk.Tk()
 
 def saludar():
-    etiqueta.config(text="¡Hola, Maria♥!")
+    etiqueta.config(text="¡Hola, PROFESORCITO :V!")
     etiqueta.config(bg = "pink")
 
 boton = tk.Button(ventana, text="Saludo", command=saludar)
