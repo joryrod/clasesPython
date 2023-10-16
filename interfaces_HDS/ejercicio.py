@@ -37,7 +37,7 @@ cuadro_texto3.grid(row=5,column=1)
 
 widget_dos=Frame()
 widget_dos.grid(row=7, column=0,columnspan=2)
-widget_dos.config(width='400', height='50')
+widget_dos.config(width='400', height='300')
 widget_dos.config(bg='red')
 
 ventana.mainloop()
