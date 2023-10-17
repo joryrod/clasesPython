@@ -2,6 +2,7 @@ from tkinter import *
 
 ventana=Tk()
 ventana.geometry("400x500")
+ventana.minsize(width=400,height=500)
 
 widget_uno=Frame()
 widget_uno.grid(row=0, column=0,columnspan=2)
