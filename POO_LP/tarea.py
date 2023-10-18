@@ -1,12 +1,12 @@
 alumnos=[
     {
         'id':1,
-        'nombre':'Nadine',
-        'apellido':'Atoccsa Ortiz',
-        'dni':75223365,
-        'edad':18,
-        'sexo':'F',
-        'periodo academico':'III periodo',
+        'nombre':'Jory',
+        'apellido':'Rodriguez Camargo',
+        'dni':47686117,
+        'edad':30,
+        'sexo':'M',
+        'periodo academico':'IV periodo',
         'programa de estudio':'apsti'
         
     }
@@ -62,11 +62,11 @@ class Alumno:
         pass
     
 
-a=Alumno('Maria','Calle Limascca',73211542, 19,'F', 'IV periodo','APSTI')
+a=Alumno('JONATHAN','FLORES CUPE',73211542, 19,'M', 'IV periodo','APSTI')
 print(a.mostrar_alumnos())
-print(a.mostrar_alumno(1))
 print(a.registrar_alumno())
 print(a.mostrar_alumnos())
+print(a.mostrar_alumno(1))
 print(a.eliminar_alumno(2))
 print(a.mostrar_alumnos())
 print(a.actualizar_alumno(1,clave='edad',valor='aceite'))
