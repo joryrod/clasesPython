@@ -54,3 +54,8 @@ lista_alumnos=[
 print(f"todos mis alumnitos{lista_alumnos}")
 fans_melody=list(filter(lambda par:par["flaquita"]=="melody",lista_alumnos))
 print(f"los que quieren con melody{fans_melody}")
+
+################################################################
+
+nuevo_objeto=list(map(lambda par:{"nombre_alumno":par["nombre"],"germita":par["flaquita"]},lista_alumnos))
+print(nuevo_objeto)
