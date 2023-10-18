@@ -1,13 +1,14 @@
+
 alumnos=[
     {
-        'id':1,
-        'nombre':'Jory',
-        'apellido':'Rodriguez Camargo',
-        'dni':47686117,
-        'edad':30,
-        'sexo':'M',
-        'periodo academico':'IV periodo',
-        'programa de estudio':'apsti'
+        'ID':1,
+        'NOMBRE':'Orlando',
+        'APELLIDO':'Lopez Santaria',
+        'DNI':7454522,
+        'EDAD':20,
+        'SEXO':'M',
+        'PERIODO ACADEMICO':'III periodo',
+        'PROGRAMA DE ESTUDIO':'APSTI'
         
     }
 ]
@@ -15,7 +16,7 @@ alumnos=[
 
 class Alumno:
    
-    def __init__(self, nombre, apellido, dni, edad, sexo, periodo, programa):
+    def __init__(self, nombre, apellido, dni, edad, sexo, periodo, programa='APSTI'):
         self.nombre=nombre
         self.apellido=apellido
         self.dni=dni
@@ -40,14 +41,14 @@ class Alumno:
     def registrar_alumno(self):
         nuevo_id=len(alumnos)+1
         alumno_nuevo={
-            'id':nuevo_id,
-            'nombre':self.nombre,
-            'apellido':self.apellido,
-            'dni':self.dni,
-            'edad':self.edad,
-            'sexo':self.sexo,
-            'periodo academico':self.periodo,
-            'programa de estudio':self.programa
+            'ID':nuevo_id,
+            'NOMBRE':self.nombre,
+            'APELLIDO':self.apellido,
+            'DNI':self.dni,
+            'EDAD':self.edad,
+            'SEXO':self.sexo,
+            'PERIODO ACADEMICO':self.periodo,
+            'PROGRAMA DE ESTUDIO':self.programa
         }
             
         registro_alumno=alumnos.append(alumno_nuevo)
@@ -55,18 +56,22 @@ class Alumno:
 
     def eliminar_alumno(self, id):
         alumno_eliminar=alumnos.pop(id-1)
-        return f"el siguiente alumno fue eliminado de la lista: {alumno_eliminar}"
+        return f"el siguiente alumno fue eliminado: {alumno_eliminar}"
 
     def actualizar_alumno(self, id, clave, valor):
-        alumnos[id-1][clave]=valor
-        pass
+         ol=valor
+         actualizacion= list(filter(lambda obj: obj[clave]==id, alumnos))[0].update({clave:valor}) 
+        # alumnos[id-1][clave]=valor
+        # pass
     
 
-a=Alumno('JONATHAN','FLORES CUPE',73211542, 19,'M', 'IV periodo','APSTI')
-print(a.mostrar_alumnos())
+a=Alumno('Maria','Calle Limascca',73211542, 19,'F', 'IV periodo')
 print(a.registrar_alumno())
 print(a.mostrar_alumnos())
-print(a.mostrar_alumno(1))
-print(a.eliminar_alumno(2))
-print(a.mostrar_alumnos())
-print(a.actualizar_alumno(1,clave='edad',valor='aceite'))
+# print(a.mostrar_alumno(1))
+# print(a.mostrar_alumnos())
+# print(a.eliminar_alumno(2))
+# print(a.mostrar_alumnos())
+#--print(a.actualizar_alumno(1,clave='edad',valor='sexo'))
+print(a.actualizar_alumno())
+print(a.mostrar_alumnos(73211542, 'DNI'))
