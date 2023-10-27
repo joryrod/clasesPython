@@ -59,7 +59,7 @@ entrada_grados=tk.Entry(cuadro1,
     width=10,
     justify=tk.RIGHT,
     state="normal")
-entrada_grados.pack(side=tk.LEFT,padx=10,pady=10)
+entrada_grados.pack(side=tk.LEFT,padx=20,pady=20)
     
 cuadro1.pack(pady=10)
 
