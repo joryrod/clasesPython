@@ -5,7 +5,7 @@ class Operaciones:
         self.ventana=Tk()
         self.ventana.geometry("290x220")
         self.ventana.title("Operaciones Aritmeticas")
-        self.ventana.config(bg="gray")
+        self.ventana.config(bg="lightblue")
 
 # radiobuttons
 
@@ -27,34 +27,34 @@ class Operaciones:
 
         invisible=Label(self.ventana,text="  ")
         invisible.grid(row=0,rowspan=11,column=0)
-        self.ventana.config(bg="gray")
+        self.ventana.config(bg="lightblue")
 
         invisible_1=Label(self.ventana,text="",font=("Helvetica",1))
         invisible_1.grid(row=0,column=1)
-        self.ventana.config(bg="gray")
+        self.ventana.config(bg="lightblue")
 
         invisible_2=Label(self.ventana,text="  ")
         invisible_2.grid(row=0,rowspan=11,column=4)
 
         invisible_3=Label(self.ventana,text="",font=("Helvetica",1))
         invisible_3.grid(row=3,column=1)
-        self.ventana.config(bg="gray")
+        self.ventana.config(bg="lightblue")
 
         invisible_4=Label(self.ventana,text="",font=("Helvetica",1))
         invisible_4.grid(row=6,column=1)
-        self.ventana.config(bg="gray")
+        self.ventana.config(bg="lightblue")
 
         invisible_5=Label(self.ventana,text="",font=("Helvetica",1))
         invisible_5.grid(row=9,column=1)
-        self.ventana.config(bg="gray")
+        self.ventana.config(bg="lightblue")
 
         invisible_6=Label(self.ventana,text="",font=("Helvetica",1))
         invisible_6.grid(row=11,column=1)
-        self.ventana.config(bg="gray")
+        self.ventana.config(bg="lightblue")
 
         invisible_7=Label(self.ventana,text="             ")
         invisible_7.grid(row=0,rowspan=11,column=2)
-        self.ventana.config(bg="gray")  
+        self.ventana.config(bg="lightblue")  
 
 # widget de texto
 
@@ -70,11 +70,11 @@ class Operaciones:
 # cuadros de texto
     
         self.cuadro_text=Entry(self.ventana)
-        self.cuadro_text.config(bg="skyblue",fg="white")
+        self.cuadro_text.config(bg="black",fg="white")
         self.cuadro_text.grid(row=2,column=1)
 
-        self.cuadro_text1=Entry(self.ventana)
-        self.cuadro_text1.config(bg="skyblue",fg="white")
+        self.cuadro_text1=Entry(self.ventana,bg="blue")
+        self.cuadro_text1.config(bg="black",fg="white")
         self.cuadro_text1.grid(row=5,column=1)
 
         self.cuadro_text2=Entry(self.ventana)
