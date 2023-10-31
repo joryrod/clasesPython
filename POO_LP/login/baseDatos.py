@@ -1,0 +1,86 @@
+# crear una lista de objetos
+# cada objeto tendra los datos de una persona
+# nombre, edad f_naciminento, dni, usuario, password
+# minimo 5 registros maximo 10 registros
+usuarios=[
+    {
+        "dni":12345678,
+        "nombre":"moises",
+        "f_nacimiento":"28/08/1990",
+        "edad":"",
+        "usuario":"mochucha",
+        "password":"1234"
+    },
+    {
+        "dni":71439102,
+        "nombre":"cristian",
+        "f_nacimiento":"11/04/2004",
+        "edad":"",
+        "usuario":"asta",
+        "password":"xd"
+    },
+    {
+        "dni":11234567,
+        "nombre":"jona",
+        "f_nacimiento":"10/07/2004",
+        "edad":"",
+        "usuario":"pajas",
+        "password":"12345"
+    },
+    {
+        "dni":11123456,
+        "nombre":"edwin",
+        "f_nacimiento":"10/08/1790",
+        "edad":"",
+        "usuario":"cejotas",
+        "password":"1234"
+    },
+    {
+        "dni":12234577,
+        "nombre":"china",
+        "f_nacimiento":"15/05/2003",
+        "edad":"",
+        "usuario":"chinita prosti",
+        "password":"12345789"
+    },
+    {
+        "dni":45678912,
+        "nombre":"adan",
+        "f_nacimiento":"30/05/1995",
+        "edad":"",
+        "usuario":"satan",
+        "password":"12789"
+    },
+    {
+        "dni":1111111,
+        "nombre":"feliciana",
+        "f_nacimiento":"10/10/2000",
+        "edad":"",
+        "usuario":"feli",
+        "password":"4321"
+    },
+    {
+        "dni":22222222,
+        "nombre":"adan",
+        "f_nacimiento":"20/01/2001",
+        "edad":"",
+        "usuario":"satan",
+        "password":"2341"
+    },
+    {
+        "dni":33221144,
+        "nombre":"nadine",
+        "f_nacimiento":"18/01/1000",
+        "edad":"",
+        "usuario":"gata",
+        "password":"87456321"
+    },
+    {
+        "dni":99574861,
+        "nombre":"jory",
+        "f_nacimiento":"27/08/1995",
+        "edad":"",
+        "usuario":"mobi",
+        "password":"china12345678"
+    }
+]
