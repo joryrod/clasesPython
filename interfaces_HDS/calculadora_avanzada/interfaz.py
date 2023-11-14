@@ -1,6 +1,7 @@
 from tkinter import *
 from tkinter import font
 import config as cons
+from funciones import *
 
 class interfazCalculadora(Tk):
     def __init__(self):
@@ -22,7 +23,7 @@ class interfazCalculadora(Tk):
 
     def construir_widget(self):
         # etiqueta para mostrar la configuracion
-        self.operacion_label=Label(self,text="HOLIS",font=("Arial",16),fg=cons.COLOR_TEXTO_NEGRO,bg=cons.COLOR_FONDO_NEGRO,justify="right")
+        self.operacion_label=Label(self,text="CASIO",font=("Arial",16),fg=cons.COLOR_TEXTO_NEGRO,bg=cons.COLOR_FONDO_NEGRO,justify="right")
         self.operacion_label.grid(row=0,column=3,padx=10,pady=10)
 
         # caja de texto donde se muestra a los numeros ingresados
@@ -48,10 +49,10 @@ class interfazCalculadora(Tk):
                 color_fondo=cons.COLOR_BOTONES_NEGRO
                 boton_font=robot_font
             if boton=="=":
-                Button(self,text=boton,width=11,height=2,bg=color_fondo,fg=cons.COLOR_TEXTO_NEGRO,relief=FLAT,font=boton_font,padx=5,pady=5,bd=0,borderwidth=0,highlightthickness=0,overrelief="flat").grid(row=row_ini,column=col_ini,columnspan=2,pady=5)
+                Button(self,command=lambda b=boton:enviar_boton(self,b),text=boton,width=11,height=2,bg=color_fondo,fg=cons.COLOR_TEXTO_NEGRO,relief=FLAT,font=boton_font,padx=5,pady=5,bd=0,borderwidth=0,highlightthickness=0,overrelief="flat").grid(row=row_ini,column=col_ini,columnspan=2,pady=5)
                 col_ini+=1
             else:
-                Button(self,text=boton,width=5,height=2,bg=color_fondo,fg=cons.COLOR_TEXTO_NEGRO,relief=FLAT,font=boton_font,padx=5,pady=5,bd=0,borderwidth=0,highlightthickness=0,overrelief="flat").grid(row=row_ini,column=col_ini,pady=5)
+                Button(self,command=lambda b=boton:enviar_boton(self,b),text=boton,width=5,height=2,bg=color_fondo,fg=cons.COLOR_TEXTO_NEGRO,relief=FLAT,font=boton_font,padx=5,pady=5,bd=0,borderwidth=0,highlightthickness=0,overrelief="flat").grid(row=row_ini,column=col_ini,pady=5)
                 col_ini+=1
             if col_ini>3:
                 col_ini=0
