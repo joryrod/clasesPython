@@ -3,11 +3,13 @@ from tkinter import font
 import config as cons
 from funciones import *
 
+
 class interfazCalculadora(Tk):
     def __init__(self):
         super().__init__()
         self.configura_ventana()
         self.construir_widget()
+        self.boton_cambio_tema()
 
     def configura_ventana(self):
         self.title("calculadora avanzada")
@@ -22,8 +24,9 @@ class interfazCalculadora(Tk):
         cons.centrar_ventana(self,w,h)
 
     def construir_widget(self):
+
         # etiqueta para mostrar la configuracion
-        self.operacion_label=Label(self,text="CASIO",font=("Arial",16),fg=cons.COLOR_TEXTO_NEGRO,bg=cons.COLOR_FONDO_NEGRO,justify="right")
+        self.operacion_label=Label(self,text="",font=("Arial",16),fg=cons.COLOR_TEXTO_NEGRO,bg=cons.COLOR_FONDO_NEGRO,justify="right")
         self.operacion_label.grid(row=0,column=3,padx=10,pady=10)
 
         # caja de texto donde se muestra a los numeros ingresados
@@ -57,3 +60,12 @@ class interfazCalculadora(Tk):
             if col_ini>3:
                 col_ini=0
                 row_ini+=1
+
+    def boton_cambio_tema(self):
+        self.tema_oscuro=True
+        font_icono=font.Font(family="FontAwesone",size=8)
+        self.boton_tema=Button(self,text="Modo Oscuro\f186",width=8,
+        font=font_icono,bd=0,borderwidth=0,highlightthickness=0,relief=FLAT,
+        bg=cons.COLOR_BOTONES_ESPECIAL_LIGHT,command=lambda:cambio_tema(self,cons))
+        self.boton_tema.grid(row=0,column=0,columnspan=2,padx=0,pady=0,
+        sticky="nw")
