@@ -3,14 +3,14 @@ COLOR_FONDO_NEGRO="#1a1b28"
 COLOR_TEXTO_NEGRO="white"
 COLOR_BOTONES_ESPECIAL_NEGRO="#52c9dc"
 COLOR_BOTONES_NEGRO="#1e2435"
-COLOR_CAJA_TEXTO_NEGRO="1a1b28"
+COLOR_CAJA_TEXTO_NEGRO="#1a1b28"
 
 # constantes para el tema claro
 COLOR_FONDO_LIGHT="#ffffff"
 COLOR_TEXTO_LIGHT="black"
 COLOR_BOTONES_ESPECIAL_LIGHT="#52c9dc"
 COLOR_BOTONES_LIGHT="#f2f8fc"
-COLOR_CAJA_TEXTO_LIGHT="ffffff"
+COLOR_CAJA_TEXTO_LIGHT="#ffffff"
 
 # funcion que nos permite centrar nuestra pantalla
 def centrar_ventana(ventana,ancho_ventana,largo_ventana):

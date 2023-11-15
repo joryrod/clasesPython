@@ -29,11 +29,11 @@ def cambio_tema(ventana,colores):
     if ventana.tema_oscuro:
         ventana.configure(bg=colores.COLOR_FONDO_LIGHT)
         ventana.caja_operaciones.config(fg=colores.COLOR_TEXTO_LIGHT,bg=colores.COLOR_CAJA_TEXTO_LIGHT)
-        ventana.operacion_label.config(fg=colores.COLOR_TEXTO_LIGHT,bg=colores.COLOR_FONFO_LIGHT)
+        ventana.operacion_label.config(fg=colores.COLOR_TEXTO_LIGHT,bg=colores.COLOR_FONDO_LIGHT)
         ventana.boton_tema.configure(text="uf\185 Modo Claro",relief=SUNKEN,bg=colores.COLOR_BOTONES_ESPECIAL_LIGHT)
     else:
         ventana.configure(bg=colores.COLOR_FONDO_NEGRO)
         ventana.caja_operaciones.config(fg=colores.COLOR_TEXTO_NEGRO,bg=colores.COLOR_CAJA_TEXTO_NEGRO)
-        ventana.operacion_label.config(fg=colores.COLOR_TEXTO_NEGRO,bg=colores.COLOR_FONFO_NEGROO)
+        ventana.operacion_label.config(fg=colores.COLOR_TEXTO_NEGRO,bg=colores.COLOR_FONDO_NEGRO)
         ventana.boton_tema.configure(text="uf\185 Modo Claro",relief=SUNKEN,bg=colores.COLOR_BOTONES_ESPECIAL_NEGRO) 
     ventana.tema_oscuro=not ventana.tema_oscuro                                                                                                         
