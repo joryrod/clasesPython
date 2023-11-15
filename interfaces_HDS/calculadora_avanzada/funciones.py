@@ -5,7 +5,7 @@ def enviar_boton(ventana,valor):
         exprecion=ventana.caja_operaciones.get().replace("%","/100")
         resultado=eval(exprecion)
         ventana.caja_operaciones.delete(0,END)
-        ventana.caja_operaciones.insert(0,str(resultado))
+        ventana.caja_operaciones.insert(0,str(int(resultado)))
         operacion=exprecion+" "+valor
         ventana.operacion_label.config(text=operacion)
     elif valor == "C":
