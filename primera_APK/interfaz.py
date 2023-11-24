@@ -1,6 +1,7 @@
 from tkinter import *
 from tkinter import ttk
 from config import *
+from funciones import *
 
 class InterfazApp(Tk):
     def __init__(self):
@@ -41,13 +42,13 @@ class InterfazApp(Tk):
         self.cajas_botones=LabelFrame(self,text="Cajas de botones",width=150,height=430,bg=COLOR_FONDO_PRIMARIO,fg="white",font=("arial",12),relief=FLAT,pady=60)
         self.cajas_botones.grid(row=0,column=1,pady=20,padx=20)
         # boton nuevo
-        self.nuevo=Button(self.cajas_botones,text="Nuevo",bg=COLOR_BOTON,fg="White",relief=FLAT,bd=0,width=20,height=2,font=("Arial",10)).pack(pady=10)
+        self.nuevo=Button(self.cajas_botones,command=lambda:f_nuevo(self),text="Nuevo",bg=COLOR_BOTON,fg="White",relief=FLAT,bd=0,width=20,height=2,font=("Arial",10)).pack(pady=10)
         # boton actualizar
-        self.actualizar=Button(self.cajas_botones,text="Actualizar",bg=COLOR_BOTON,fg="White",relief=FLAT,bd=0,width=20,height=2,font=("Arial",10)).pack(pady=10)
+        self.actualizar=Button(self.cajas_botones,command=lambda:f_actualizar(self),text="Actualizar",bg=COLOR_BOTON,fg="White",relief=FLAT,bd=0,width=20,height=2,font=("Arial",10)).pack(pady=10)
         # boton eliminar
-        self.eliminar=Button(self.cajas_botones,text="Eliminar",bg=COLOR_BOTON,fg="White",relief=FLAT,bd=0,width=20,height=2,font=("Arial",10)).pack(pady=10)
+        self.eliminar=Button(self.cajas_botones,command=lambda:f_eliminar(self),text="Eliminar",bg=COLOR_BOTON,fg="White",relief=FLAT,bd=0,width=20,height=2,font=("Arial",10)).pack(pady=10)
         # boton cancelar
-        self.cancelar=Button(self.cajas_botones,text="Cancelar",bg=COLOR_BOTON,fg="White",relief=FLAT,bd=0,width=20,height=2,font=("Arial",10)).pack(pady=10)
+        self.cancelar=Button(self.cajas_botones,command=lambda:f_limpiar(self),text="Cancelar",bg=COLOR_BOTON,fg="White",relief=FLAT,bd=0,width=20,height=2,font=("Arial",10)).pack(pady=10)
         # FIN CAJITA DE BOTONES
 
         # CAJA DE TABLA DE DATOS
@@ -70,6 +71,7 @@ class InterfazApp(Tk):
         ]
         for nom,ape,cel in alumnitos:
             self.tabla_datos.insert("",END,text=nom,values=(ape,cel))
+        self.tabla_datos.bind("<Double-1>",lambda event:f_dobleClick(self,event))
 
         self.tabla_datos.place(x=0,y=0,width=400,height=600)
 
