@@ -35,10 +35,12 @@ def f_actualizar(ventana):
         mensaje=askyesno(title="ACTUALIZAR",message="Estas seguro que deseas actualizar esta hvda")
         if mensaje==True:
             f_limpiar(ventana)
+            ventana.tabla_datos.selection_remove(elem_actualizar)
             return ventana.tabla_datos.item(elem_actualizar,text=nombre,values=(apellidos,celular))
         else:
             showinfo(title="NO ACTUALIZO",message="No se actualizo nngun registro")
             f_limpiar(ventana)
+            ventana.tabla_datos.selection_remove(elem_actualizar)
 
 def f_dobleClick(ventana,event):
     elem_actualizar=ventana.tabla_datos.selection()
@@ -51,9 +53,10 @@ def f_dobleClick(ventana,event):
         ventana.nombre_texto.insert(0,nombre)
         ventana.apellidos_texto.insert(0,apellido)
         ventana.celular_texto.insert(0,celular)
+        ventana.tabla_datos.selection_remove(elem_actualizar)
     else:
         showinfo(title="ACTUALIZAR",message="Ningun registro seleccionado para actualizacion")
-
+        ventana.tabla_datos.selection_remove(elem_actualizar)
 
     # print(captura_datos["text"],captura_datos["values"][0],captura_datos["values"][1])
     
