@@ -1,10 +1,13 @@
 from tkinter import *
 from tkinter.messagebox import *
 import orm
-from Tablas.Usuarios import Usuarios
+from Tablas.Alumnos import Alumnos
+
 #creamos nuestra base de datos
-db = orm.SQLiteORM("db_diario_escolar")
-db.crear_tabla(Usuarios)
+
+db = orm.SQLiteORM("db_Alumnos")
+db.crear_tabla(Alumnos)
+
 #funcion limpiar
 
 def limpiar(ventana):
@@ -22,19 +25,18 @@ def nuevo(ventana):
         "Apellido":apellido,
         "Celular":celular
     }
-    db.insertarUno('Usuarios',date)
-    showinfo(title='save', message='nuevo registro agregado')
-    #nuevo
+    db.insertarVarios('Usuarios',date)
+    showinfo(title='save', message='Se agrego un nuevo registro')
+
     id = db.mostrar('Usuarios', where=f'Celular={celular}')[0][0]
     ventana.tabla_datos.insert('',END, text=id, values=(name,apellido,celular))
     limpiar(ventana)
-#eliminar 
+ 
 def eliminar(ventana):
     elemento_eliminar = ventana.tabla_datos.selection()
-    dato = ventana.tabla_datos.item(elemento_eliminar)['text'] #sirve para mostrar el registro seleccionado
+    dato = ventana.tabla_datos.item(elemento_eliminar)['text'] 
     ventana.tabla_datos.delete(elemento_eliminar)
     db.eliminar('Usuarios',where=f'id= "{dato}"')
-    #db.eliminar('Usuarios',where='Nombre="ggh"')
     showwarning(title='Delete', message='registro eliminado')
 
 def actualizar(ventana):
@@ -69,10 +71,10 @@ def doble_clic(ventana,event):
     if mensaje == True:
         nombre = captura_datos['values'][0]
         apellidos = captura_datos['values'][1]
-        celulular = captura_datos['values'][2]
+        celular = captura_datos['values'][2]
         ventana.nombre_texto.insert(0,nombre)
         ventana.apellido_texto.insert(0,apellidos)
-        ventana.celular_texto.insert(0,celulular)
+        ventana.celular_texto.insert(0,celular)
     else:
         showinfo(title='actualizar',message='ningún registro seleccionado para actualizar')
         ventana.tabla_datos.selection_remove(elemento_actualizar)
