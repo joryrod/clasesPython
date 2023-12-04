@@ -1,3 +1,3 @@
-from interfaz import InterfazApp
-root= InterfazApp()
+from interfaz import Interfaz_app
+root = Interfaz_app()
 root.mainloop()
